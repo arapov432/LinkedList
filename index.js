@@ -2,9 +2,11 @@ class LinkedList {
   constructor() {
     this.head = null;
     this.tail = null;
+    this.both = null; 
     this.length = 0;
   }
 }
+//Linked list i add some objects inside constructor
 class Node extends LinkedList{
   constructor(value ,props){
     super(props);
@@ -40,5 +42,7 @@ printList () {
 }
 var no = new Node();
 no.push(10);
-no.push(20)
+no.push(30);
+no.push(20);
+no.push(40);
 console.log(no)
